@@ -7,17 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F023D5B51700BDDA00AC2AB0 /* DistribDB.cp in Sources */ = {isa = PBXBuildFile; fileRef = F023D5B41700BDDA00AC2AB0 /* DistribDB.cp */; };
+		F092C2181700C00500A7E99C /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F092C2161700C00500A7E99C /* Parameter.cpp */; };
+		F092C2191700C00500A7E99C /* Parameter.h in Headers */ = {isa = PBXBuildFile; fileRef = F092C2171700C00500A7E99C /* Parameter.h */; };
+		F09D49001700D15700F1EFF7 /* Group.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09D48FE1700D15700F1EFF7 /* Group.cpp */; };
+		F09D49011700D15700F1EFF7 /* Group.h in Headers */ = {isa = PBXBuildFile; fileRef = F09D48FF1700D15700F1EFF7 /* Group.h */; };
+		F09D49051700D7A000F1EFF7 /* Node.h in Headers */ = {isa = PBXBuildFile; fileRef = F09D49031700D7A000F1EFF7 /* Node.h */; };
+		F09D49091700D8BF00F1EFF7 /* Database.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09D49071700D8BF00F1EFF7 /* Database.cpp */; };
+		F09D490A1700D8BF00F1EFF7 /* Database.h in Headers */ = {isa = PBXBuildFile; fileRef = F09D49081700D8BF00F1EFF7 /* Database.h */; };
+		F09D49151700E3FD00F1EFF7 /* Node.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F09D49141700E3FD00F1EFF7 /* Node.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F023D5AB1700BDDA00AC2AB0 /* DistribDB.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = DistribDB.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		F023D5AF1700BDDA00AC2AB0 /* DistribDB-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DistribDB-Prefix.pch"; sourceTree = "<group>"; };
 		F023D5B01700BDDA00AC2AB0 /* DistribDBProj.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DistribDBProj.xcconfig; sourceTree = "<group>"; };
 		F023D5B11700BDDA00AC2AB0 /* DistribDBTarget.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = DistribDBTarget.xcconfig; sourceTree = "<group>"; };
-		F023D5B21700BDDA00AC2AB0 /* DistribDB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistribDB.h; sourceTree = "<group>"; };
-		F023D5B31700BDDA00AC2AB0 /* DistribDBPriv.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DistribDBPriv.h; sourceTree = "<group>"; };
-		F023D5B41700BDDA00AC2AB0 /* DistribDB.cp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DistribDB.cp; sourceTree = "<group>"; };
+		F092C2161700C00500A7E99C /* Parameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Parameter.cpp; path = src/parameter/Parameter.cpp; sourceTree = "<group>"; };
+		F092C2171700C00500A7E99C /* Parameter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Parameter.h; path = src/parameter/Parameter.h; sourceTree = "<group>"; };
+		F09D48FE1700D15700F1EFF7 /* Group.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Group.cpp; path = src/parameter/Group.cpp; sourceTree = "<group>"; };
+		F09D48FF1700D15700F1EFF7 /* Group.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Group.h; path = src/parameter/Group.h; sourceTree = "<group>"; };
+		F09D49031700D7A000F1EFF7 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Node.h; path = src/parameter/Node.h; sourceTree = "<group>"; };
+		F09D49071700D8BF00F1EFF7 /* Database.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Database.cpp; path = src/db/Database.cpp; sourceTree = "<group>"; };
+		F09D49081700D8BF00F1EFF7 /* Database.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Database.h; path = src/db/Database.h; sourceTree = "<group>"; };
+		F09D49141700E3FD00F1EFF7 /* Node.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Node.cpp; path = src/parameter/Node.cpp; sourceTree = "<group>"; };
+		F09D49161700E75D00F1EFF7 /* Host.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Host.h; path = src/network/Host.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,22 +62,67 @@
 		F023D5AD1700BDDA00AC2AB0 /* DistribDB */ = {
 			isa = PBXGroup;
 			children = (
+				F092C2111700BF8E00A7E99C /* src */,
 				F023D5B01700BDDA00AC2AB0 /* DistribDBProj.xcconfig */,
 				F023D5B11700BDDA00AC2AB0 /* DistribDBTarget.xcconfig */,
-				F023D5B21700BDDA00AC2AB0 /* DistribDB.h */,
-				F023D5B31700BDDA00AC2AB0 /* DistribDBPriv.h */,
-				F023D5B41700BDDA00AC2AB0 /* DistribDB.cp */,
-				F023D5AE1700BDDA00AC2AB0 /* Supporting Files */,
 			);
 			path = DistribDB;
 			sourceTree = "<group>";
 		};
-		F023D5AE1700BDDA00AC2AB0 /* Supporting Files */ = {
+		F092C2111700BF8E00A7E99C /* src */ = {
 			isa = PBXGroup;
 			children = (
-				F023D5AF1700BDDA00AC2AB0 /* DistribDB-Prefix.pch */,
+				F09D49061700D8B100F1EFF7 /* db */,
+				F092C21A1700C50400A7E99C /* signals */,
+				F092C2141700BFD200A7E99C /* ipc */,
+				F092C2131700BFCB00A7E99C /* network */,
+				F092C2121700BFC200A7E99C /* parameter */,
 			);
-			name = "Supporting Files";
+			name = src;
+			sourceTree = "<group>";
+		};
+		F092C2121700BFC200A7E99C /* parameter */ = {
+			isa = PBXGroup;
+			children = (
+				F09D48FE1700D15700F1EFF7 /* Group.cpp */,
+				F09D48FF1700D15700F1EFF7 /* Group.h */,
+				F092C2161700C00500A7E99C /* Parameter.cpp */,
+				F092C2171700C00500A7E99C /* Parameter.h */,
+				F09D49031700D7A000F1EFF7 /* Node.h */,
+				F09D49141700E3FD00F1EFF7 /* Node.cpp */,
+			);
+			name = parameter;
+			sourceTree = "<group>";
+		};
+		F092C2131700BFCB00A7E99C /* network */ = {
+			isa = PBXGroup;
+			children = (
+				F09D49161700E75D00F1EFF7 /* Host.h */,
+			);
+			name = network;
+			sourceTree = "<group>";
+		};
+		F092C2141700BFD200A7E99C /* ipc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ipc;
+			sourceTree = "<group>";
+		};
+		F092C21A1700C50400A7E99C /* signals */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = signals;
+			sourceTree = "<group>";
+		};
+		F09D49061700D8B100F1EFF7 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				F09D49071700D8BF00F1EFF7 /* Database.cpp */,
+				F09D49081700D8BF00F1EFF7 /* Database.h */,
+			);
+			name = db;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -75,6 +132,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F092C2191700C00500A7E99C /* Parameter.h in Headers */,
+				F09D49011700D15700F1EFF7 /* Group.h in Headers */,
+				F09D49051700D7A000F1EFF7 /* Node.h in Headers */,
+				F09D490A1700D8BF00F1EFF7 /* Database.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,7 +190,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F023D5B51700BDDA00AC2AB0 /* DistribDB.cp in Sources */,
+				F092C2181700C00500A7E99C /* Parameter.cpp in Sources */,
+				F09D49001700D15700F1EFF7 /* Group.cpp in Sources */,
+				F09D49091700D8BF00F1EFF7 /* Database.cpp in Sources */,
+				F09D49151700E3FD00F1EFF7 /* Node.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,10 +222,13 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -184,10 +251,13 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
@@ -226,6 +296,7 @@
 				F023D5BA1700BDDA00AC2AB0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
